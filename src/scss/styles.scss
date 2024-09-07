@@ -1,0 +1,810 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "variables";
+
+.auxiliar {
+  height: 0px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+// Estilo Menu de Navegación
+
+header {
+  height: 17rem;
+  margin-left: 5%;
+  margin-right: 5%;
+
+  .upperHeader {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    .spaceDiv {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      img {
+        width: 5rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+      }
+    }
+
+    .headerLogoContainer {
+      width: 12rem;
+
+      .logo {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .headerNav {
+    margin-top: 2rem;
+
+    .headerNavsContainer {
+      display: flex;
+      justify-content: center;
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: 20px;
+
+        li {
+          font-weight: bold;
+
+          a {
+            text-decoration: none;
+            color: $black-color;
+            cursor: pointer;
+
+            &:hover {
+              color: darken($black-color, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Estilo carrusel 1
+
+.carrusel {
+  .carouselP {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+
+    img {
+      width: 33.333%;
+      height: 16rem;
+      object-fit: cover;
+      flex-shrink: 0;
+      scroll-snap-align: start;
+    }
+  }
+}
+
+// Estilo Nosotros
+
+.nosotrosPiscinas {
+  margin-top: 30rem;
+  margin-bottom: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .fondoNosotros {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+
+    .imagenNosotros {
+      width: 100%;
+      height: 50rem;
+    }
+  }
+
+  .cardPiscinasAqua {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 40;
+    background-color: $white-color;
+    margin-top: -10rem;
+    padding: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 14px;
+
+    h2 {
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.3rem;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+
+    button {
+      width: 20%;
+      background-color: $light-blue;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      color: $black-color;
+      font-weight: bolder;
+      transition: transform 0.5s ease, box-shadow 0.3s ease;
+    }
+
+    button:hover {
+      background-color: $light-blue;
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+// Estilo Piscinas
+
+.galeriaPiscinas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    text-align: center;
+  }
+
+  .contenedorBotones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2rem;
+
+    button {
+      background-color: $light-blue;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      color: $black-color;
+      font-weight: bold;
+      transition: transform 0.5s ease, box-shadow 0.3s ease;
+    }
+
+    button:hover {
+      background-color: $light-blue;
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .contenedorCards {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+
+    .card {
+      background-color: $white-color;
+      padding-bottom: 1rem;
+      border-radius: 8px;
+      width: 20rem;
+      height: 20rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+
+      .cardTitle {
+        margin-left: 1rem;
+      }
+      .cardDescription {
+        text-overflow: ellipsis;
+        white-space: wrap;
+        overflow: hidden;
+        margin-left: 1rem;
+      }
+
+      .cardImage {
+        width: 20rem;
+        height: 15rem;
+      }
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+    }
+  }
+}
+
+// Estilo Servicios
+
+.serviciosContainer {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .imagenServicios {
+    width: 100%;
+    height: 25rem;
+  }
+
+  .cardServiciosContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    .cardServicios {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 20rem;
+      height: 100%;
+      background-color: $white-color;
+      margin-top: -4rem;
+      border-radius: 8px;
+      padding: 1rem;
+
+      .imagenServiciosContainer {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        .iconoServicios {
+          width: 5rem;
+        }
+      }
+    }
+  }
+}
+
+// Estilo Clientes
+
+.clientesFelices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .contenedorTituloClientes {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    font-weight: bold;
+  }
+
+  .contenedorImagenYParrafo {
+    display: flex;
+    width: 70%;
+
+    .contenedorImagenCliente {
+      width: 90%;
+
+      img {
+        width: 100%;
+        height: 30rem;
+      }
+    }
+    .contenedorParrafoCliente {
+      font-size: 1.5rem;
+      margin-left: 10%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .parrafoClienteUno {
+        margin-top: 5rem;
+      }
+      .parrafoClienteDos {
+        margin-top: 2rem;
+      }
+
+      button {
+        width: 40%;
+        margin-top: 3rem;
+        background-color: $light-blue;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        color: $black-color;
+        font-weight: bold;
+        transition: transform 0.5s ease, box-shadow 0.3s ease;
+      }
+
+      button:hover {
+        background-color: $light-blue;
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+
+// Estilo Testimonios
+
+.contenedorTestimonios {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  background-color: $white-color;
+
+  .tituloTestimonios {
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0.5rem 1rem;
+    background-color: #3b82f6;
+    color: $white-color;
+    border-radius: 9999px;
+    z-index: 10;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+
+    &.left {
+      left: 0;
+    }
+
+    &.right {
+      right: 0;
+    }
+
+    &:hover {
+      background-color: #2563eb;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+    }
+  }
+
+  .carouselT {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    gap: 12px;
+    padding: 2px;
+    width: 100%;
+
+    .testimonio {
+      font-style: italic;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-color: $white-color;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      margin-right: 1rem;
+      width: 99%;
+      height: 400px;
+
+      img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-top: 16px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        margin-top: 16px;
+      }
+
+      .nombreCliente {
+        font-size: 16px;
+        margin-top: 20px;
+      }
+
+      h4 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 16px;
+      }
+    }
+  }
+}
+
+// Estilo Formulario
+
+.seccionFormulario {
+  background-color: $white-color;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  margin-bottom: 4rem;
+
+  #formularioPiscina {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .tituloExterno {
+    text-align: center;
+    color: $black-color;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: $black-color;
+    margin-bottom: 20px;
+  }
+
+  .estilosFormulario {
+    margin-bottom: 15px;
+    width: 95%;
+
+    label {
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 16px;
+      outline: none;
+
+      &:focus {
+        border-color: #3498db;
+      }
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+  }
+
+  button {
+    display: flex;
+    background-color: $light-blue;
+    justify-content: center;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: $black-color;
+    font-weight: bold;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      background-color: darken($light-blue, 10%);
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+  }
+  #alerta {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $light-blue;
+    color: $black-color;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .alerta-oculta {
+    display: none;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+}
+
+// Estilo reconocimientos
+
+.contenedorReconocimientos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+
+  h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .contenedorImagenYReconocimiento {
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.3rem;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 800px;
+    width: 90%;
+
+    img {
+      width: 4rem;
+      margin-right: 1rem;
+    }
+
+    .textoReconocimiento {
+      p {
+        margin: 0;
+        line-height: 1.5;
+        font-size: 16px;
+        strong {
+          font-size: 16px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+  }
+}
+
+// Estilo Footer
+
+footer {
+  background-color: #aed6f1;
+  margin-top: 5rem;
+  padding: 20px;
+  text-align: center;
+
+  .contenedorFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  .logoFooter {
+    flex: 1;
+    text-align: left;
+    img {
+      max-width: 300px;
+    }
+  }
+
+  .menuFooter {
+    flex: 1;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      li {
+        margin-bottom: 10px;
+        font-weight: bold;
+
+        a {
+          text-decoration: none;
+          color: inherit;
+          &:hover {
+            color: #118ceb;
+          }
+        }
+      }
+    }
+  }
+
+  .redesSociales {
+    flex: 1;
+    text-align: center;
+    p {
+      margin-bottom: 2rem;
+    }
+    .iconos {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      img {
+        width: 40px;
+        height: 40px;
+        transition: transform 0.3s ease;
+      }
+
+      img:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .clientesFelices {
+    .contenedorImagenYParrafo {
+      .contenedorImagenCliente {
+        display: none;
+      }
+    }
+  }
+
+  footer {
+    .contenedorFooter {
+      .logoFooter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+  .serviciosContainer {
+    .cardServiciosContainer {
+      display: flex;
+      flex-wrap: wrap;
+
+      .cardServicios {
+        margin-top: 3rem;
+      }
+    }
+  }
+
+  header {
+    .upperHeader {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .spaceDiv {
+        display: none;
+      }
+      .headerInputContainer {
+        display: none;
+      }
+    }
+  }
+
+  .cardPiscinasAqua {
+    margin-left: 5%;
+  }
+
+  .carrusel {
+    display: none;
+  }
+
+  .nosotrosPiscinas {
+    margin-top: 30rem;
+    margin-bottom: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .cardPiscinasAqua {
+      button {
+        width: 50%;
+      }
+    }
+  }
+
+  .clientesFelices {
+    .contenedorImagenYParrafo {
+      .contenedorParrafoCliente {
+        button {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (width: 320px) {
+  .nosotrosPiscinas {
+    .fondoNosotros {
+      .imagenNosotros {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Vanessa Sánchez Pulido" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./src/Assets/Images/Logo/logo.png"
+    />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <title>Piscinas Aqua</title>
+  </head>
+  <body>
+    <header>
+      <div class="upperHeader">
+        <a class="spaceDiv" href="#contacto">
+          <img
+            src="./src/Assets/Images/ImagesContactanos/contactanos.svg"
+            alt="Contacto"
+          />
+          <p>Cotiza con nosotros</p>
+        </a>
+        <div class="headerLogoContainer">
+          <img
+            class="logo"
+            src="./src/Assets/Images/Logo/logo.png"
+            alt="Logo"
+          />
+        </div>
+      </div>
+      <nav class="headerNav">
+        <div class="headerNavsContainer">
+          <ul>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#piscinas">Piscinas</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="carrusel">
+        <div class="carouselP" id="carouselPrincipal">
+          <img
+            src="./src/Assets/Images/ImagesCarrusel1/1c.webp"
+            alt="Piscina 1"
+          />
+          <img
+            src="./src/Assets/Images/ImagesCarrusel1/2c.webp"
+            alt="Piscina 2"
+          />
+          <img
+            src="./src/Assets/Images/ImagesCarrusel1/3c.webp"
+            alt="Piscina 3"
+          />
+          <img
+            src="./src/Assets/Images/ImagesCarrusel1/4c.webp"
+            alt="Piscina 4"
+          />
+          <img
+            src="./src/Assets/Images/ImagesCarrusel1/5c.webp"
+            alt="Piscina 5"
+          />
+          <img
+            src="./src/Assets/Images/ImagesCarrusel1/6c.webp"
+            alt="Piscina 5"
+          />
+          <img
+            src="./src/Assets/Images/ImagesCarrusel1/7c.webp"
+            alt="Piscina 5"
+          />
+        </div>
+      </section>
+      <div class="auxiliar" id="nosotros"></div>
+      <section class="nosotrosPiscinas">
+        <div class="fondoNosotros">
+          <img
+            class="imagenNosotros"
+            src="./src/Assets/Images/Nosotros/nosotros.webp"
+            alt="Fondo"
+          />
+        </div>
+
+        <div class="cardPiscinasAqua">
+          <h2>Piscinas Aqua</h2>
+          <h3>
+            Transformación y frescura en tus espacios. Creamos un paraíso
+            acuático.
+          </h3>
+          <p>
+            Descubre nuestras soluciones innovadoras para espacios de relajación
+            únicos, perfectas para glampings, residencias y hoteles. Somos
+            especialistas en diseñar ambientes acuáticos que combinan
+            sofisticación y confort, permitiéndote disfrutar de la tranquilidad
+            sin salir de casa.
+          </p>
+          <button onclick="location.href='#piscinas'">Explora más</button>
+        </div>
+      </section>
+
+      <section class="galeriaPiscinas" id="piscinas">
+        <h2>Descubre Piscinas que Transforman Espacios</h2>
+        <div class="contenedorBotones">
+          <button class="filtroBoton" id="Todo">Todo</button>
+          <button class="filtroBoton" id="Minimalista">Minimalista</button>
+          <button class="filtroBoton" id="Eco">Eco</button>
+          <button class="filtroBoton" id="Moderna">Moderna</button>
+          <button class="filtroBoton" id="Tropical">Tropical</button>
+        </div>
+        <div class="contenedorCards">
+          <div class="card filtroPiscina" id="Minimalista">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina1.webp"
+              alt="Card 1"
+            />
+            <h3 class="cardTitle">Piscina Summer</h3>
+            <p class="cardDescription">
+              Espaciosa y rodeada de naturaleza, perfecta para disfrutar del sol
+              y el aire fresco.
+            </p>
+          </div>
+          <div class="card filtroPiscina" id="Eco">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina2.webp"
+              alt="Card 2"
+            />
+            <h3 class="cardTitle">Piscina Perla</h3>
+            <p class="cardDescription">
+              Elegante y climatizada, ideal para nadar en cualquier época del
+              año
+            </p>
+          </div>
+          <div class="card filtroPiscina" id="Moderna">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina3.webp"
+              alt="Card 3"
+            />
+            <h3 class="cardTitle">Piscina Start</h3>
+            <p class="cardDescription">
+              Diseño único y artístico, convirtiendo el espacio en una obra de
+              arte.
+            </p>
+          </div>
+          <div class="card filtroPiscina" id="Eco">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina4.webp"
+              alt="Card 4"
+            />
+            <h3 class="cardTitle">Piscina Luxury</h3>
+            <p class="cardDescription">
+              Con acabados de lujo y tecnología avanzada, para una experiencia
+              exclusiva.
+            </p>
+          </div>
+          <div class="card filtroPiscina" id="Tropical">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina5.webp"
+              alt="Card 5"
+            />
+            <h3 class="cardTitle">Piscina Peace</h3>
+            <p class="cardDescription">
+              Espaciosa y segura, ideal para la convivencia y el disfrute de
+              todos los residentes.
+            </p>
+          </div>
+          <div class="card filtroPiscina" id="Moderna">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina6.webp"
+              alt="Card 6"
+            />
+            <h3 class="cardTitle">Piscina Brisa</h3>
+            <p class="cardDescription">
+              Perfecta para relajarse y disfrutar de un ambiente cálido.
+            </p>
+          </div>
+          <div class="card filtroPiscina" id="Eco">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina7.webp"
+              alt="Card 7"
+            />
+            <h3 class="cardTitle">Piscina Coral</h3>
+            <p class="cardDescription">
+              Innovadora y única, ideal para impresionar a los invitados.
+            </p>
+          </div>
+          <div class="card filtroPiscina" id="Minimalista">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina8.webp"
+              alt="Card 8"
+            />
+            <h3 class="cardTitle">Piscina Sol</h3>
+            <p class="cardDescription">
+              Proporciona sombra y comodidad en el centro.
+            </p>
+          </div>
+          <div class="card filtroPiscina" id="Moderna">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina9.webp"
+              alt="Card 9"
+            />
+            <h3 class="cardTitle">Piscina Spark</h3>
+            <p class="cardDescription">
+              Espaciosa y perfecta para nadar y jugar.
+            </p>
+          </div>
+          <div class="card filtroPiscina" id="Minimalista">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina10.webp"
+              alt="Card 9"
+            />
+            <h3 class="cardTitle">Piscina SplashZone</h3>
+            <p class="cardDescription">
+              Elegante y bien mantenida, ideal para el turismo.
+            </p>
+          </div>
+          <div class="card filtroPiscina" id="Eco">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina11.webp"
+              alt="Card 9"
+            />
+            <h3 class="cardTitle">Piscina Infinity</h3>
+            <p class="cardDescription">
+              Exquisita y sofisticada, para un estilo de vida opulento.
+            </p>
+          </div>
+
+          <div class="card filtroPiscina" id="Tropical">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina12.webp"
+              alt="Card 9"
+            />
+            <h3 class="cardTitle">Piscina Oceanis</h3>
+            <p class="cardDescription">
+              Rodeada de vegetación, ofrece una experiencia exótica.
+            </p>
+          </div>
+
+          <div class="card filtroPiscina" id="Moderna">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina13.webp"
+              alt="Card 9"
+            />
+            <h3 class="cardTitle">Piscina Nebula</h3>
+            <p class="cardDescription">
+              Majestuosa y grandiosa, digna de un palacio.
+            </p>
+          </div>
+          <div class="card filtroPiscina" id="Eco">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina14.webp"
+              alt="Card 9"
+            />
+            <h3 class="cardTitle">Piscina CrystalWave</h3>
+            <p class="cardDescription">Descripción de la card.</p>
+          </div>
+          <div class="card filtroPiscina" id="Minimalista">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina15.webp"
+              alt="Card 9"
+            />
+            <h3 class="cardTitle">Piscina SereneFlow</h3>
+            <p class="cardDescription">
+              Añade un toque de elegancia con el sonido relajante del agua.
+            </p>
+          </div>
+
+          <div class="card filtroPiscina" id="Eco">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina16.webp"
+              alt="Card 9"
+            />
+            <h3 class="cardTitle">Piscina Stellar</h3>
+            <p class="cardDescription">
+              Iluminada para disfrutar de noches mágicas.
+            </p>
+          </div>
+
+          <div class="card filtroPiscina" id="Eco">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina17.webp"
+              alt="Card 9"
+            />
+            <h3 class="cardTitle">Piscina Drift</h3>
+            <p class="cardDescription">
+              Doble elegancia y serenidad con dos fuentes
+            </p>
+          </div>
+
+          <div class="card filtroPiscina" id="Moderna">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina18.webp"
+              alt="Card 9"
+            />
+            <h3 class="cardTitle">Piscina Zafiro</h3>
+            <p class="cardDescription">
+              Natural y rústica, perfecta para un entorno orgánico.
+            </p>
+          </div>
+
+          <div class="card filtroPiscina" id="Eco">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina19.webp"
+              alt="Card 9"
+            />
+            <h3 class="cardTitle">Piscina Luminis</h3>
+            <p class="cardDescription">
+              Moderna y minimalista, con líneas claras.
+            </p>
+          </div>
+
+          <div class="card filtroPiscina" id="Minimalista">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina20.webp"
+              alt="Card 9"
+            />
+            <h3 class="cardTitle">Piscina Mirage</h3>
+            <p class="cardDescription">
+              Ideal para disfrutar todo el año sin importar el clima.
+            </p>
+          </div>
+
+          <div class="card filtroPiscina" id="Moderna">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina21.webp"
+              alt="Card 9"
+            />
+            <h3 class="cardTitle">Piscina ZenWave</h3>
+            <p class="cardDescription">
+              Funcional y práctica, sin complicaciones.
+            </p>
+          </div>
+
+          <div class="card filtroPiscina" id="Minimalista">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina22.webp"
+              alt="Card 9"
+            />
+            <h3 class="cardTitle">Piscina Dream</h3>
+            <p class="cardDescription">
+              Rústica y cálida, perfecta para un entorno natural.
+            </p>
+          </div>
+
+          <div class="card filtroPiscina" id="Eco">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina23.webp"
+              alt="Card 9"
+            />
+            <h3 class="cardTitle">Piscina Solstice</h3>
+            <p class="cardDescription">
+              Estilo contemporáneo con las últimas tendencias.
+            </p>
+          </div>
+
+          <div class="card filtroPiscina" id="Minimalista">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina24.webp"
+              alt="Card 9"
+            />
+            <h3 class="cardTitle">Piscina Free</h3>
+            <p class="cardDescription">Disfruta del sol y el aire fresco.</p>
+          </div>
+
+          <div class="card filtroPiscina" id="Eco">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina25.webp"
+              alt="Card 9"
+            />
+            <h3 class="cardTitle">Piscina Stan</h3>
+            <p class="cardDescription">
+              Diseño artístico y único, para los amantes del arte.
+            </p>
+          </div>
+
+          <div class="card filtroPiscina" id="Minimalista">
+            <img
+              class="cardImage"
+              src="./src/Assets/Images/ImagesPiscinas/piscina26.webp"
+              alt="Card 9"
+            />
+            <h3 class="cardTitle">Piscina Befly</h3>
+            <p class="cardDescription">
+              Espaciosa y abierta, ideal para grandes reuniones.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="serviciosContainer" id="servicios">
+        <h2>Servicios Integrales que Superan tus Expectativas</h2>
+        <img
+          class="imagenServicios"
+          src="./src/Assets/Images/ImagesServicios/op7.jpg"
+          alt="Banner"
+        />
+        <div class="cardServiciosContainer">
+          <div class="cardServicios">
+            <h3>Fabricación Elegante</h3>
+            <span style="color: black"></span>
+            <div class="imagenServiciosContainer">
+              <img
+                class="iconoServicios"
+                src="./src/Assets/Images/ImagesServicios/servicio1.svg"
+                alt="Servicio1"
+              />
+            </div>
+
+            <div>
+              <p>
+                Creamos piscinas elegantes y funcionales con materiales de alta
+                calidad. Nos especializamos en diseños innovadores que se
+                integran perfectamente.
+              </p>
+            </div>
+          </div>
+
+          <div class="cardServicios">
+            <h3>Diseño a tu medida</h3>
+            <span style="color: black"></span>
+            <div class="imagenServiciosContainer">
+              <img
+                class="iconoServicios"
+                src="./src/Assets/Images/ImagesServicios/servicio2.svg"
+                alt="Servicio1"
+              />
+            </div>
+
+            <div>
+              <p>
+                Diseñamos espacios únicos que reflejan tu estilo y preferencias.
+                Trabajamos contigo en cada etapa para asegurarnos un resultado
+                final con calidad.
+              </p>
+            </div>
+          </div>
+
+          <div class="cardServicios">
+            <h3>Restauración Moderna</h3>
+            <span style="color: black"></span>
+            <div class="imagenServiciosContainer">
+              <img
+                class="iconoServicios"
+                src="./src/Assets/Images/ImagesServicios/servicio3.svg"
+                alt="Servicio1"
+              />
+            </div>
+
+            <div>
+              <p>
+                Renovamos tu hogar con las últimas tendencias en diseño y
+                materiales. Transformamos espacios antiguos en ambientes
+                modernos y acogedores.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="clientesFelices">
+        <div class="contenedorTituloClientes">
+          <p>Clientes Felices, Piscinas Increíbles</p>
+        </div>
+        <div class="contenedorImagenYParrafo">
+          <div class="contenedorImagenCliente">
+            <img
+              src="./src/Assets/Images/ImagesClientes/cliente.webp"
+              alt="clientes"
+            />
+          </div>
+          <div class="contenedorParrafoCliente">
+            <p class="parrafoClienteUno">
+              Nuestros clientes hablan por nosotros. En Piscinas Aqua, cada
+              proyecto es una oportunidad para superar expectativas y crear
+              espacios únicos.
+            </p>
+            <p class="parrafoClienteDos">
+              Lee sus testimonios y descubre por qué somos la elección preferida
+              para tus sueños acuáticos.
+            </p>
+            <button onclick="location.href='#testimonios'">Ver Reseñas</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="contenedorTestimonios" id="testimonios">
+        <div class="tituloTestimonios">
+          <h1>Testimonios que Respaldan Nuestra Excelencia</h1>
+        </div>
+        <button id="prevSecundario" class="left">&#9664;</button>
+        <div class="carouselT" id="carouselTestimonios">
+          <div class="testimonio">
+            <img
+              src="./src/Assets/Images/ImagesTestimonios/perfil1.webp"
+              alt="Cliente 1"
+            />
+            <p>
+              "La piscina es increíble, superó todas nuestras expectativas.
+              ¡Gracias por el excelente trabajo!"
+            </p>
+            <h4>~Ana Gómez</h4>
+          </div>
+          <div class="testimonio">
+            <img
+              src="./src/Assets/Images/ImagesTestimonios/perfil2.webp"
+              alt="Cliente 2"
+            />
+            <p>
+              "Innovación y calidad en cada detalle. Nuestra piscina es el lugar
+              favorito de la familia."
+            </p>
+            <h4>~Carolina Martínez</h4>
+          </div>
+          <div class="testimonio">
+            <img
+              src="./src/Assets/Images/ImagesTestimonios/perfil3.webp"
+              alt="Cliente 3"
+            />
+            <p>
+              "El diseño y los acabados son de primera. ¡Recomiendo esta
+              Piscinas Aqua a todos!"
+            </p>
+            <h4>~Victor Rodríguez</h4>
+          </div>
+          <div class="testimonio">
+            <img
+              src="./src/Assets/Images/ImagesTestimonios/perfil4.webp"
+              alt="Cliente 4"
+            />
+            <p>
+              "Profesionales y atentos a cada detalle. Nuestra piscina es un
+              sueño hecho realidad Gracias."
+            </p>
+            <h4>~Juan Pérez</h4>
+          </div>
+          <div class="testimonio">
+            <img
+              src="./src/Assets/Images/ImagesTestimonios/perfil5.png"
+              alt="Cliente 5"
+            />
+            <p>
+              "La mejor inversión que hemos hecho. La calidad y el servicio son
+              excepcionales, gran equipo."
+            </p>
+            <h4>~Johan López</h4>
+          </div>
+          <div class="testimonio">
+            <img
+              src="./src/Assets/Images/ImagesTestimonios/perfil6.webp"
+              alt="Cliente 6"
+            />
+            <p>
+              "Estamos encantados con nuestra nueva piscina. ¡Gracias por
+              hacerla tan especial!"
+            </p>
+            <h4>~Lina Sánchez</h4>
+          </div>
+          <div class="testimonio">
+            <img
+              src="./src/Assets/Images/ImagesTestimonios/perfil7.webp"
+              alt="Cliente 7"
+            />
+            <p>
+              "La tecnología y los acabados son impresionantes. ¡Piscinas Aqua
+              Totalmente recomendados!"
+            </p>
+            <h4>~Sofía Ramírez</h4>
+          </div>
+          <div class="testimonio">
+            <img
+              src="./src/Assets/Images/ImagesTestimonios/perfil8.webp"
+              alt="Cliente 8"
+            />
+            <p>
+              "Un servicio impecable y una piscina de ensueño. No podríamos
+              estar más felices."
+            </p>
+            <h4>~Andrés Torres</h4>
+          </div>
+          <div class="testimonio">
+            <img
+              src="./src/Assets/Images/ImagesTestimonios/perfil9.webp"
+              alt="Cliente 9"
+            />
+            <p>
+              "Cada vez que veo nuestra piscina, me sorprende la calidad y el
+              diseño. ¡Excelente trabajo y equipo!"
+            </p>
+            <h4>~Elena Fernández</h4>
+          </div>
+          <div class="testimonio">
+            <img
+              src="./src/Assets/Images/ImagesTestimonios/perfil10.webp"
+              alt="Cliente 10"
+            />
+            <p>
+              "La atención al cliente y la calidad eco e innovadora de los
+              acabados son insuperables. ¡Gracias!"
+            </p>
+            <h4>~Diego Morales</h4>
+          </div>
+        </div>
+        <button id="nextSecundario" class="right">&#9654;</button>
+      </section>
+
+      <section class="seccionFormulario" id="contacto">
+        <h2 class="tituloExterno">Contacta a nuestro equipo</h2>
+        <form id="formularioPiscina">
+          <h1>¡Haz realidad la piscina de tus sueños!</h1>
+          <div class="estilosFormulario">
+            <label for="nombre">Nombre:</label>
+            <input
+              type="text"
+              id="nombre"
+              placeholder="Martin Perez"
+              required
+            />
+          </div>
+          <div class="estilosFormulario">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="piscinasaqua1@gmail.com"
+              required
+            />
+          </div>
+          <div class="estilosFormulario">
+            <label for="asunto">Asunto:</label>
+            <input
+              type="text"
+              id="asunto"
+              placeholder="Remodelación piscina campestre"
+              required
+            />
+          </div>
+          <div class="estilosFormulario">
+            <label for="mensaje">Mensaje:</label>
+            <textarea
+              id="mensaje"
+              placeholder="Estoy interesado en contactar el servicio que ofrece Piscinas Aqua..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+        <div id="alerta" class="alertaOculta">
+          Formulario enviado con éxito.
+        </div>
+      </section>
+
+      <section class="contenedorReconocimientos">
+        <h3 class="tituloReconocimientos">
+          Reconocimientos que avalan nuestra calidad
+        </h3>
+
+        <div class="contenedorImagenYReconocimiento">
+          <img
+            src="./src/Assets/Images/ImagesReconocimientos/reconocimientos.svg"
+            alt="icono"
+          />
+          <div class="textoReconocimiento">
+            <p>
+              <strong
+                >International Awards for Pool and Spa Design (IAPS):</strong
+              >
+              Premios que reconocen la excelencia en el diseño de piscinas y
+              spas a nivel mundial, organizados por Piscine Global Europe.
+            </p>
+          </div>
+        </div>
+
+        <div class="contenedorImagenYReconocimiento">
+          <img
+            src="./src/Assets/Images/ImagesReconocimientos/reconocimientos.svg"
+            alt="icono"
+          />
+          <div class="textoReconocimiento">
+            <p>
+              <strong
+                >Association of Pool & Spa Professionals (APSP) Awards:</strong
+              >
+              Premios que destacan las instalaciones más bellas y creativas de
+              piscinas, spas y características acuáticas, exclusivos para
+              miembros de la APSP.
+            </p>
+          </div>
+        </div>
+
+        <div class="contenedorImagenYReconocimiento">
+          <img
+            src="./src/Assets/Images/ImagesReconocimientos/reconocimientos.svg"
+            alt="icono"
+          />
+          <div class="textoReconocimiento">
+            <p>
+              <strong>World Spa & Wellness Award:</strong> Premios que honran a
+              los mejores spas a nivel global, inspirando estándares
+              excepcionales en Europa, América, Asia y Australasia.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="contenedorFooter">
+        <div class="logoFooter">
+          <img
+            class="logo"
+            src="./src/Assets/Images/Logo/logo.png"
+            alt="Logo"
+          />
+        </div>
+        <div class="menuFooter">
+          <ul>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#piscinas">Piscinas</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="redesSociales">
+          <p>Conéctate en nuestras redes sociales</p>
+          <div class="iconos">
+            <a
+              href="https://www.facebook.com/profile.php?id=61565154521803"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./src/Assets/Images/ImagesRedesSociales/FB.svg"
+                alt="Facebook"
+              />
+            </a>
+            <a
+              href="https://x.com/piscinas_aqua"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./src/Assets/Images/ImagesRedesSociales/Tw.svg"
+                alt="Twitter"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./src/scripts/carousel.js"></script>
+    <script src="./src/scripts/filtros.js"></script>
+    <script src="./src/scripts/form.js"></script>
+  </body>
+</html>
