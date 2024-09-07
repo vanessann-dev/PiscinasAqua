@@ -44,7 +44,7 @@
 | [![Sass](https://skillicons.dev/icons?i=sass)](https://sass-lang.com/) | Sass es un preprocesador de CSS que extiende las capacidades de CSS, permitiendo el uso de variables, anidación, mixins y otras características. |
 | [![JavaScript](https://skillicons.dev/icons?i=javascript)](https://developer.mozilla.org/es/docs/Web/JavaScript) | JavaScript es un lenguaje de programación ampliamente utilizado en el desarrollo web para agregar interactividad a las páginas web. |
 
-## Backend en Formulario (JSON Server Local)
+## Simulación Backend en Formulario (JSON Server Local)
 
 | Descripción |
 |-------------|
